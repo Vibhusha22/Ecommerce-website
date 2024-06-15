@@ -1,13 +1,13 @@
-import AppFooter from "./Footer";
-import AppHeader from "./Header";
+import BagSummary from "./BagSummary";
+import BagContainerItems from "./BagContainerItems";
 
 const Bag = () => {
   return (
     <>
       <main>
         <div class="bag-page">
-          <div class="bag-items-container"></div>
-          <div class="bag-summary"></div>
+          <BagContainerItems></BagContainerItems>
+          <BagSummary />
         </div>
       </main>
     </>

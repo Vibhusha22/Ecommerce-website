@@ -127,6 +127,11 @@ header {
 .nav_bar a:hover {
   border-bottom: 4px solid #f54e77;
 }
+.bag-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
 .nav_bar a sup {
   color: #ff3f6c;
