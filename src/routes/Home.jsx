@@ -1,4 +1,4 @@
-import HomeItems from "./HomeItems";
+import HomeItems from "../components/HomeItems";
 
 function Home() {
   const item = {
