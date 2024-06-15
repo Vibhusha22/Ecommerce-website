@@ -1,18 +1,17 @@
-import "./style/index.css";
-import "./style/bag.css";
-import myntraLogo from "./images/myntra_logo.webp";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-function App() {
+const Bag = () => {
   return (
     <>
       <header>
-        <div className="logo_container">
+        <div class="logo_container">
           <a href="#">
-            <img className="myntra_home" src={myntraLogo} alt="Myntra Home" />
+            <img
+              class="myntra_home"
+              src="../images/myntra_logo.webp"
+              alt="Myntra Home"
+            />
           </a>
         </div>
-        <nav className="nav_bar">
+        <nav class="nav_bar">
           <a href="#">Men</a>
           <a href="#">Women</a>
           <a href="#">Kids</a>
@@ -22,44 +21,42 @@ function App() {
             Studio <sup>New</sup>
           </a>
         </nav>
-        <div className="search_bar">
-          <span className="material-symbols-outlined search_icon">search</span>
+        <div class="search_bar">
+          <span class="material-symbols-outlined search_icon">search</span>
           <input
-            type="text"
-            className="search_input"
+            class="search_input"
             placeholder="Search for products, brands and more"
           />
         </div>
-        <div className="action_bar">
-          <div className="action_container">
-            <span className="material-symbols-outlined action_icon">
-              person
-            </span>
-            <span className="action_name">Profile</span>
+        <div class="action_bar">
+          <div class="action_container">
+            <span class="material-symbols-outlined action_icon">person</span>
+            <span class="action_name">Profile</span>
           </div>
 
-          <div className="action_container">
-            <span className="material-symbols-outlined action_icon">
-              favorite
-            </span>
-            <span className="action_name">Wishlist</span>
+          <div class="action_container">
+            <span class="material-symbols-outlined action_icon">favorite</span>
+            <span class="action_name">Wishlist</span>
           </div>
 
-          <a className="action_container" href="pages/bag.html">
-            <span className="material-symbols-outlined action_icon">
+          <div class="action_container">
+            <span class="material-symbols-outlined action_icon">
               shopping_bag
             </span>
-            <span className="action_name">Bag</span>
-            <span className="bag-item-count">0</span>
-          </a>
+            <span class="action_name">Bag</span>
+            <span class="bag-item-count">0</span>
+          </div>
         </div>
       </header>
       <main>
-        <div className="items-container"></div>
+        <div class="bag-page">
+          <div class="bag-items-container"></div>
+          <div class="bag-summary"></div>
+        </div>
       </main>
       <footer>
-        <div className="footer_container">
-          <div className="footer_column">
+        <div class="footer_container">
+          <div class="footer_column">
             <h3>ONLINE SHOPPING</h3>
 
             <a href="#">Men</a>
@@ -71,7 +68,7 @@ function App() {
             <a href="#">Myntra Insider</a>
           </div>
 
-          <div className="footer_column">
+          <div class="footer_column">
             <h3>ONLINE SHOPPING</h3>
 
             <a href="#">Men</a>
@@ -83,7 +80,7 @@ function App() {
             <a href="#">Myntra Insider</a>
           </div>
 
-          <div className="footer_column">
+          <div class="footer_column">
             <h3>ONLINE SHOPPING</h3>
 
             <a href="#">Men</a>
@@ -95,13 +92,14 @@ function App() {
             <a href="#">Myntra Insider</a>
           </div>
         </div>
+        <hr />
 
-        <div className="copyright">
-          © 2023 www.myntra.com. All rights reserved.
-        </div>
+        <div class="copyright">© 2023 www.myntra.com. All rights reserved.</div>
       </footer>
+      <script src="../data/items.js"></script>
+      <script src="../scripts/index.js"></script>
+      <script src="../scripts/bag.js"></script>
     </>
   );
-}
-
-export default App;
+};
+export default Bag;
