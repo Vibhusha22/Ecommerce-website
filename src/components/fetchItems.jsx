@@ -24,15 +24,8 @@ function FetchItems() {
         dispatch(fetchStatusActions.markFetchDone());
         dispatch(fetchStatusActions.markFetchEnd());
         dispatch(itemsActions.addInitialItems(data.items[0]));
-      })
-      .catch((error) => {
-        if (error.name === "AbortError") {
-          console.log("Fetch aborted");
-        } else {
-          console.error("Fetch error:", error);
-        }
+        dispatch;
       });
-
     return () => {
       controller.abort();
     };

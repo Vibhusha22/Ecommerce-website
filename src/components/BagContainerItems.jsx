@@ -1,19 +1,10 @@
-function BagContainerItems() {
-  const item = {
-    company: "Zara",
-    item_name: "T-shirt",
-    current_price: "2314",
-    original_price: "5246",
-    discount_percentage: "40",
-    return_period: "7",
-    delivery_date: "13/5/2024",
-  };
+function BagContainerItems({ item }) {
   return (
     <>
       <div className="bag-items-container">
         <div className="bag-item-container">
           <div className="item-left-part">
-            <img className="bag-item-img" src="./images/5.jpg" />
+            <img className="bag-item-img" src={item.image} />
           </div>
           <div className="item-right-part">
             <div className="company">{item.company}</div>

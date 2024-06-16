@@ -2,8 +2,10 @@ import { MdPersonOutline } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const bagItems = useSelector((store) => store.bagItems);
   return (
     <>
       <header>
@@ -48,7 +50,7 @@ function Header() {
           <Link to="/Bag" className="action_container">
             <IoBagOutline />
             <span className="action_name">Bag</span>
-            <span className="bag-item-count">0</span>
+            <span className="bag-item-count">{bagItems.length}</span>
           </Link>
         </div>
       </header>
