@@ -39,7 +39,7 @@ function BagContainerItems() {
             </div>
           </div>
 
-          <div className="remove-from-cart" onclick="removeFromBag(${item.id})">
+          <div className="remove-from-cart" onClick="removeFromBag(${item.id})">
             X
           </div>
         </div>
