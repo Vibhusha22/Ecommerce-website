@@ -13,18 +13,18 @@ const Bag = () => {
   return (
     <>
       <main>
-        <div className="bag-page">
-          <div className="bag-items-container">
-            {finalItems.length > 0 ? (
-              finalItems.map((item) => (
+        {finalItems.length > 0 ? (
+          <div className="bag-page">
+            <div className="bag-items-container">
+              {finalItems.map((item) => (
                 <BagContainerItems key={item.id} item={item} />
-              ))
-            ) : (
-              <BagEmpty />
-            )}
+              ))}
+            </div>
+            <BagSummary />
           </div>
-          <BagSummary />
-        </div>
+        ) : (
+          <BagEmpty />
+        )}
       </main>
     </>
   );

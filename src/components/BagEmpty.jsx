@@ -1,4 +1,8 @@
 function BagEmpty() {
-  return <h1 className="display-8 text-body-emphasis">The cart is empty!</h1>;
+  return (
+    <h3 className="display-8" style={{ textAlign: "center", margin: "120px" }}>
+      The cart is empty!
+    </h3>
+  );
 }
 export default BagEmpty;

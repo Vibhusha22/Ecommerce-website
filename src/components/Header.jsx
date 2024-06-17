@@ -3,6 +3,7 @@ import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { GiShop } from "react-icons/gi";
 
 function Header() {
   const bagItems = useSelector((store) => store.bagItems);
@@ -11,11 +12,9 @@ function Header() {
       <header>
         <div className="logo_container">
           <Link to="/">
-            <img
-              className="myntra_home"
-              src="images/myntra_logo.webp"
-              alt="Myntra Home"
-            />
+            <h1 style={{ color: "black" }}>
+              <GiShop />
+            </h1>
           </Link>
         </div>
         <nav className="nav_bar">
