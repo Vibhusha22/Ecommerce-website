@@ -14,13 +14,15 @@ const Bag = () => {
     <>
       <main>
         <div className="bag-page">
-          {finalItems.length > 0 ? (
-            finalItems.map((item) => (
-              <BagContainerItems key={item.id} item={item} />
-            ))
-          ) : (
-            <BagEmpty />
-          )}
+          <div className="bag-items-container">
+            {finalItems.length > 0 ? (
+              finalItems.map((item) => (
+                <BagContainerItems key={item.id} item={item} />
+              ))
+            ) : (
+              <BagEmpty />
+            )}
+          </div>
           <BagSummary />
         </div>
       </main>
