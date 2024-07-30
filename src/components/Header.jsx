@@ -21,14 +21,15 @@ function Header() {
           <a href="#">Men</a>
           <a href="#">Women</a>
           <a href="#">Kids</a>
-          <a href="#">Home & Living</a>
-          <a href="#">Beauty</a>
+          <a href="#">
+            Home & Living <sup>New</sup>
+          </a>
+          {/* <a href="#">Beauty</a>
           <a href="#">
             Studio <sup>New</sup>
-          </a>
+          </a> */}
         </nav>
         <div className="search_bar">
-          <span className="material-symbols-outlined search_icon">search</span>
           <input
             type="text"
             className="search_input"
